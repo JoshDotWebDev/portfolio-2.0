@@ -1,0 +1,526 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #e9e6e6;
+    color: #080808;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-position: center;
+}
+.btn.btn1{
+    display: inline-block;
+    background: #e9e6e6;
+    margin-left: 3px;
+    margin-top: 20px;
+}
+
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 190px;
+    cursor: pointer;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: rgb(79, 78, 78);
+    text-decoration: none;
+    font-size: 23px;
+}
+
+nav ul li a:hover{
+    color: #000;
+}
+
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span{
+    color: rgb(79, 78, 78);
+}
+
+/*-----------------------------------------About-------------------------------------------------------*/
+
+#about{
+    padding: 80px 0;
+    color: rgb(79, 78, 78);
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.about-col-2 span{
+    font-size: 23px;
+}
+
+.sub-title{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: rgb(79, 78, 78);
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #000;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #000000;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 100%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 75px 0;
+    font-size: 20px;
+}
+
+.tab-contents ul li span{
+    color: #000000;
+    font-size: 23px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+/*----------------------------------------------------------Services-------------------------------------------*/
+
+#services{
+    padding: 30px 0;
+}
+
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.services-list div{
+    color: #fff;
+    background: rgb(79, 78, 78);
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.services-list div h2{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div p{
+    font-size: 20px;
+}
+.services-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.services-list div:hover{
+    background: #000000;
+    transform: translateY(-25px);
+}
+
+/*-----------------------------------------------------Project------------------------------------------------*/
+
+#portfolio{
+    margin-top: 100px;
+    padding: 50;
+}
+
+.project-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.project{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.project img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(145, 142, 142, 0.6), #eae8e8);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    transition: height 0.7s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 21px;
+}
+.layer a{
+    margin-top: 20px;
+    color: #000000;
+    font-size: 18px;
+    line-height: 60px;
+    background: #5e5b5b;
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.project:hover img{
+    transform: scale(1.1);
+}
+
+.project:hover .layer{
+    height: 100%;
+}
+
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #000000;
+    padding: 15px 50px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000000;
+    transition: background 0.3s;
+}
+.btn:hover{
+    background: #8a8888;
+    cursor: pointer;
+}
+
+/*--------------------------------Get in Touch---------------------------------------------------*/
+
+hr{
+    border-top: 5px solid #383737;
+    margin: 60px 150px;
+}
+
+.get-touch{
+    flex-basis: 100%;
+    display: block;
+}
+
+.get-touch h3{
+    font-size: 40px;
+    margin-top: 40px;
+    margin-left: 200px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-bottom: 20px;
+    color: rgb(79, 78, 78);
+}
+.get-touch form{
+    width: 70%;
+}
+
+
+/*-----------------------------------------Footer / Contact-----------------------------------------------------------*/
+
+.gradient-background {
+    background: linear-gradient(300deg, #949292, #bab9b9, #e7e6e6);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+.footerContact{
+    padding: 80px 0px;
+}
+
+.contact{
+    margin-left: 190px;
+}
+
+.footer{
+    margin-right: 100px;
+    margin-top: 225px;
+}
+
+.contact p{
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.contact p i{
+    color: #383737;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons i{
+    margin-top: 30px;
+}
+.social-icons a{
+    color: #666464;
+    text-decoration: none;
+    font-size: 40px;
+    margin-right: 15px;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #080808;
+    transform: translateY(-5px);
+}
+
+/*-----------------------------------*/
+
+.btn.btn2{
+    display: inline-block;
+    background: #e9e6e6;
+    margin-left: 200px;
+}
+.btn.btn2 i{
+    margin-right: 10px;
+}
+.btn.btn2:hover{
+    background-color: #8a8888;
+}
+
+form input, form textarea{
+    width: 80%;
+    border: 0;
+    outline: none;
+    background-color: #fff;
+    padding: 15px;
+    margin: 15px 200px;
+    color: #000;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/*--------------------------------------------Small Screen Responsive*/
+
+nav .fas{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+
+    /*-----------------Header---------------------------------*/
+    #header{
+        background-image: url(images/phone-background.png);
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #bab9b9;
+        position: fixed;
+        top: 0;
+        right: -400;
+        width: 350px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .btn.btn1{
+        display: inline-block;
+        background: #e9e6e6;
+        margin-left: 2px;
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    /*--------------------About-----------------*/
+
+    .sub-title{
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 20px;
+        margin-right: 20px;
+    }
+    .tab-contents ul li{
+        list-style: none;
+        margin: 30px 0;
+        font-size: 20px;
+    }
+    /*-------------Get In touch----------*/
+
+    .get-touch{
+        flex-basis: 100%;
+        margin: 10px;
+        margin-left: -185px;
+        padding: 20px;
+    }
+    .get-touch h3{
+        font-size: 40px;
+        margin-top: 0;
+        margin-left: 200px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        padding-bottom: 20px;
+        color: rgb(79, 78, 78);
+    }
+    .get-touch form{
+        width: 70%;
+    }
+    .btn.btn2{
+        margin: 0 200px;
+    }
+
+    /*----Contact-------*/
+
+    .contact{
+        flex-basis: 100%;
+        margin: 10px;
+    }
+
+    .contact p{
+        margin-top: 30px;
+        font-size: 15px;
+    }
+    .footer{
+        margin-left: 10px;
+        margin-top: 25px;
+    }
+
+}

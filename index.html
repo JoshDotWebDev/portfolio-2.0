@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josh Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2143c523df.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo3.png" class="logo" alt="joshlogo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi I'm <span>Joshua</span></h1>
+            </div>
+            <a href="images/Josh-germedia-Cv.pdf" download class="btn btn1"><i class="fa-solid fa-download"></i>Get Cv</a>
+        </div>
+    </div>
+
+<!--------------------About----------------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/aboutMe.jpg" alt="me">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p><span>When you have high-end corporate clients, your filler text might not be the place to land a lighthearted joke. 
+                        You can still skip the standard Lorem Ipsum in lieu of something more fitting, though. 
+                        Corporate Ipsum uses business buzzwords to create filler text that will be amusing to your corporate clients without 
+                        cheapening the experience of seeing their site mockup.
+                        </span>
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages</span>
+                                <p><br/>HTML, CSS<br/>JAVASCRIPT<br/>PHP</p>
+                            </li>
+                            <li><span>Web Development</span><br/>Web Development</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Azaza Biz Solution| Novalichez, QC - 2019</span><br/>Intern: Computer Encoding | E-commerce</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019 - 2023</span><br/>St. John Technological College of the Philippines</li>
+                            <li><span>2017 - 2019</span><br/>Access Computer College</li>
+                            <li><span>2013 - 2017 </span><br/>Kalayaan National High School</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------Services--------------------------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-server"></i>
+                    <h2>Services</h2>
+                    <p>For corporate-type clients who you've built solid rapport with—the ones you know enjoy a 
+                        good chuckle—try Office Ipsum. This text will keep some of the corporate speak, 
+                        but the word choice is a little edgier for clients who aren't afraid to poke some fun at themselves for using it.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="far fa-keyboard"></i>
+                    <h2>Services</h2>
+                    <p>When your business has a bolder brand persona, 
+                        you can afford to make more daring decisions with your filler text. Zombie Ipsum is perfect for agency owners or 
+                        freelancers with an affinity for the macabre and whose clients will appreciate it.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fas fa-laptop-code"></i>
+                    <h2>Services</h2>
+                    <p>Having a lunch meeting to present your mockup? Try Cheese Ipsum! 
+                        This filler language is silly yet sure to leave your clients hungry for more of your beautifully crafted work in the future!
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------Project-------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Project</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="images/project-1.png" alt="project1">
+                    <div class="layer">
+                        <h3>Social Media</h3>
+                        <p>let's sharing our ideas and information with others.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <img src="images/project-2.png" alt="project3">
+                    <div class="layer">
+                        <h3>Online Shopping</h3>
+                        <p>let's sharing our ideas and information with others.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <img src="images/project-3.png" alt="project3">
+                    <div class="layer">
+                        <h3>Music</h3>
+                        <p>let's sharing our ideas and information with others.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------------Get in Touch-------------------------------------->
+<hr/> 
+
+    <div id="getInTouch">
+        <div class="row">
+            <div class="get-touch">
+                <form>
+                    <h3>Get In Touch</h3>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Messege me"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<!------------------------------------------Contact-------------------------------------------->
+
+    <div class="footerContact gradient-background">
+        <div id="contact">
+            <div class="row">
+                <div class="contact">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i>joshuagermedia7@gmail.com</p>
+                    <p><i class="fa-solid fa-mobile-screen-button"></i>09123456789</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100078137206325"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <p class="footer">©  2023 Josh. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+   
+
+
+
+
+
+    <script>
+
+        var tabLinks = document.getElementsByClassName("tab-links");
+        var tabContents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabName){
+            for(tabLink of tabLinks){
+                tabLink.classList.remove("active-link");
+            }
+
+            for(tabContent of tabContents){
+                tabContent.classList.remove("active-tab");
+            }
+            
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabName).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+    
+</body>
+</html>
